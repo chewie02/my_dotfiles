@@ -1,0 +1,1 @@
+sudo pacman -S net-tools ranger yay syncthing sxiv pdfarranger cups manjaro-printer system-config-printer keepassxc 
