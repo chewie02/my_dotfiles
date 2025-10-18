@@ -1,0 +1,7 @@
+set -o vi
+setxkbmap -option ctrl:nocaps
+sudo pacman -Syu
+sudo pacman -Sy gcc clang zig git glibc xclip xsel wl-clipboard python-pynvim
+sudo pacman -Sy tmux raner neovim alacritty
+git clone https://github.com/chewie02/nvim.git
+git clone https://github.com/chewie02/my_dotfiles.git
