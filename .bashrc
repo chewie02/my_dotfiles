@@ -3,6 +3,10 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+if command -v tmux &> /dev/null && [ -z "$TMUX" ]; then
+  tmux attach-session -t default || tmux new-session -s default
+fi
+
 set -o vi
 setxkbmap -option ctrl:nocaps
 export EDITOR=nvim
